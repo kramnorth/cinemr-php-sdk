@@ -1,0 +1,10 @@
+{
+	"name": "kramnorth/cinemr-php-sdk",
+	"license": "Apache-2.0",
+	"description": "A PHP SDK for cinemr integration",
+	"version": "0.1-Alpha",
+	"minimum-stability": "dev",
+    	"autoload": {
+        	"files": ["cinemr.php"]
+    	}
+}
