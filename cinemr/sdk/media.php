@@ -15,7 +15,7 @@ class media extends client{
 		if($expires)
 			$data['expire'] = $expires;
 
-		return $request = $this->call($endpoint, 'GET', );
+		return $request = $this->call($endpoint, 'GET', $data);
 	}
 	
 	public function post($guid = NULL, $data){
