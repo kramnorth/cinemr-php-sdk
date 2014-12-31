@@ -6,12 +6,16 @@ namespace cinemr\sdk;
 
 class media extends client{
 	
-	public function get($guid = NULL){
+	public function get($guid = NULL, $expires = NULL){
 		$endpoint = '/media';
 		if($guid)
 			$endpoint .= '/'.$guid;
 		
-		return $request = $this->call($endpoint);
+		$data = array();
+		if($expires)
+			$data['expire'] = $expires;
+
+		return $request = $this->call($endpoint, 'GET', );
 	}
 	
 	public function post($guid = NULL, $data){

@@ -70,7 +70,7 @@ class client{
 				}
 				break;
 		}
-		echo "sent signature: $signature";
+		
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('AUTH-SIGNATURE: ' . $signature));
 		
 		curl_setopt($ch, CURLOPT_URL, self::$uri.$endpoint);
